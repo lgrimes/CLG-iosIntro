@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		104553821F50FFBE0046DD0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104553811F50FFBE0046DD0E /* AppDelegate.swift */; };
-		104553841F50FFBE0046DD0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104553831F50FFBE0046DD0E /* ViewController.swift */; };
+		104553841F50FFBE0046DD0E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104553831F50FFBE0046DD0E /* HomeViewController.swift */; };
 		104553871F50FFBE0046DD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104553851F50FFBE0046DD0E /* Main.storyboard */; };
 		104553891F50FFBE0046DD0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104553881F50FFBE0046DD0E /* Assets.xcassets */; };
 		1045538C1F50FFBE0046DD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1045538A1F50FFBE0046DD0E /* LaunchScreen.storyboard */; };
 		104553971F50FFBE0046DD0E /* Cafe_ReviewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104553961F50FFBE0046DD0E /* Cafe_ReviewerTests.swift */; };
 		104553A21F50FFBE0046DD0E /* Cafe_ReviewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104553A11F50FFBE0046DD0E /* Cafe_ReviewerUITests.swift */; };
+		104553B21F5101720046DD0E /* clag_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 104553B11F5101720046DD0E /* clag_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		1045537E1F50FFBE0046DD0E /* Cafe Reviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cafe Reviewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		104553811F50FFBE0046DD0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		104553831F50FFBE0046DD0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		104553831F50FFBE0046DD0E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		104553861F50FFBE0046DD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		104553881F50FFBE0046DD0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1045538B1F50FFBE0046DD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		1045539D1F50FFBE0046DD0E /* Cafe ReviewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cafe ReviewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		104553A11F50FFBE0046DD0E /* Cafe_ReviewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe_ReviewerUITests.swift; sourceTree = "<group>"; };
 		104553A31F50FFBE0046DD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104553B11F5101720046DD0E /* clag_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clag_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +99,11 @@
 		104553801F50FFBE0046DD0E /* Cafe Reviewer */ = {
 			isa = PBXGroup;
 			children = (
+				104553B31F5105660046DD0E /* View Controllers */,
+				104553B01F5101500046DD0E /* Resources */,
+				104553AF1F5100190046DD0E /* Views */,
 				104553811F50FFBE0046DD0E /* AppDelegate.swift */,
-				104553831F50FFBE0046DD0E /* ViewController.swift */,
-				104553851F50FFBE0046DD0E /* Main.storyboard */,
 				104553881F50FFBE0046DD0E /* Assets.xcassets */,
-				1045538A1F50FFBE0046DD0E /* LaunchScreen.storyboard */,
 				1045538D1F50FFBE0046DD0E /* Info.plist */,
 			);
 			path = "Cafe Reviewer";
@@ -123,6 +125,47 @@
 				104553A31F50FFBE0046DD0E /* Info.plist */,
 			);
 			path = "Cafe ReviewerUITests";
+			sourceTree = "<group>";
+		};
+		104553AF1F5100190046DD0E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				104553B41F5106BF0046DD0E /* Storyboards */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		104553B01F5101500046DD0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				104553B51F51078D0046DD0E /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		104553B31F5105660046DD0E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				104553831F50FFBE0046DD0E /* HomeViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		104553B41F5106BF0046DD0E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1045538A1F50FFBE0046DD0E /* LaunchScreen.storyboard */,
+				104553851F50FFBE0046DD0E /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		104553B51F51078D0046DD0E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				104553B11F5101720046DD0E /* clag_logo.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +236,7 @@
 				TargetAttributes = {
 					1045537D1F50FFBE0046DD0E = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = W492EXC268;
 						ProvisioningStyle = Automatic;
 					};
 					104553911F50FFBE0046DD0E = {
@@ -235,6 +279,7 @@
 				1045538C1F50FFBE0046DD0E /* LaunchScreen.storyboard in Resources */,
 				104553891F50FFBE0046DD0E /* Assets.xcassets in Resources */,
 				104553871F50FFBE0046DD0E /* Main.storyboard in Resources */,
+				104553B21F5101720046DD0E /* clag_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				104553841F50FFBE0046DD0E /* ViewController.swift in Sources */,
+				104553841F50FFBE0046DD0E /* HomeViewController.swift in Sources */,
 				104553821F50FFBE0046DD0E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W492EXC268;
 				INFOPLIST_FILE = "Cafe Reviewer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codelikeagirl.Cafe-Reviewer";
@@ -426,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W492EXC268;
 				INFOPLIST_FILE = "Cafe Reviewer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codelikeagirl.Cafe-Reviewer";
