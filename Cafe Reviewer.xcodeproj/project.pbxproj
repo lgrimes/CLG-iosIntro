@@ -15,6 +15,9 @@
 		104553971F50FFBE0046DD0E /* Cafe_ReviewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104553961F50FFBE0046DD0E /* Cafe_ReviewerTests.swift */; };
 		104553A21F50FFBE0046DD0E /* Cafe_ReviewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104553A11F50FFBE0046DD0E /* Cafe_ReviewerUITests.swift */; };
 		104553B21F5101720046DD0E /* clag_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 104553B11F5101720046DD0E /* clag_logo.png */; };
+		1080D5A01F5555900093048F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080D59F1F5555900093048F /* APIManager.swift */; };
+		1080D5A21F5559F20093048F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080D5A11F5559F20093048F /* Restaurant.swift */; };
+		1080D5A41F555B690093048F /* SampleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 1080D5A31F555B690093048F /* SampleResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		104553A11F50FFBE0046DD0E /* Cafe_ReviewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe_ReviewerUITests.swift; sourceTree = "<group>"; };
 		104553A31F50FFBE0046DD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		104553B11F5101720046DD0E /* clag_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clag_logo.png; sourceTree = "<group>"; };
+		1080D59F1F5555900093048F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1080D5A11F5559F20093048F /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		1080D5A31F555B690093048F /* SampleResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		104553801F50FFBE0046DD0E /* Cafe Reviewer */ = {
 			isa = PBXGroup;
 			children = (
+				1080D59E1F5555770093048F /* Data */,
 				104553B31F5105660046DD0E /* View Controllers */,
 				104553B01F5101500046DD0E /* Resources */,
 				104553AF1F5100190046DD0E /* Views */,
@@ -139,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				104553B51F51078D0046DD0E /* Images */,
+				1080D5A31F555B690093048F /* SampleResponse.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -166,6 +174,15 @@
 				104553B11F5101720046DD0E /* clag_logo.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		1080D59E1F5555770093048F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1080D59F1F5555900093048F /* APIManager.swift */,
+				1080D5A11F5559F20093048F /* Restaurant.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1080D5A41F555B690093048F /* SampleResponse.json in Resources */,
 				1045538C1F50FFBE0046DD0E /* LaunchScreen.storyboard in Resources */,
 				104553891F50FFBE0046DD0E /* Assets.xcassets in Resources */,
 				104553871F50FFBE0046DD0E /* Main.storyboard in Resources */,
@@ -304,6 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1080D5A21F5559F20093048F /* Restaurant.swift in Sources */,
+				1080D5A01F5555900093048F /* APIManager.swift in Sources */,
 				104553841F50FFBE0046DD0E /* HomeViewController.swift in Sources */,
 				104553821F50FFBE0046DD0E /* AppDelegate.swift in Sources */,
 			);
@@ -554,6 +574,7 @@
 				104553A81F50FFBE0046DD0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		104553A91F50FFBE0046DD0E /* Build configuration list for PBXNativeTarget "Cafe ReviewerTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +583,7 @@
 				104553AB1F50FFBE0046DD0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		104553AC1F50FFBE0046DD0E /* Build configuration list for PBXNativeTarget "Cafe ReviewerUITests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +592,7 @@
 				104553AE1F50FFBE0046DD0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
