@@ -42,7 +42,7 @@ default cell with all the data and customizing it as needed. Usually you will go
 and fetch the object in the data source that corresponds to the index passed in
 by the parameters.
 
-## Storyboards & .xib (Nib)
+### Storyboards & .xib (Nib)
 
 The easiest and most precise way to create a view in iOS is using storyboard or .xib,
  storyboards are preferred. You will be editing the storyboard and xib files using
@@ -50,16 +50,37 @@ The easiest and most precise way to create a view in iOS is using storyboard or 
  is fairly complex and can take quite some time to figure out what is where and how
   everything fits together. We will discuss this in more detail together.
 
-## Network calls
+### Network calls
 
-Most developers will use a third-party library to do their network calls, some of
-the most popular one is [Alamofire](https://github.com/Alamofire/Alamofire).
+Most developers will use a third-party library to do their network calls, the most 
+popular one is [Alamofire](https://github.com/Alamofire/Alamofire).
 However i personally like to minimise external dependencies because they add a layer
 of complexity and reliance. For this workshop, we will be using [NSURLSession](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/URLLoadingSystem/Articles/UsingNSURLSession.html).
  [Ray Wenderlichs Tutorial](https://www.raywenderlich.com/158106/urlsession-tutorial-getting-started)
  describes this in a lot more detail but will also give you the basics needed.
  NSURLSession is a very powerful API where you can also create a downloader, not
  just calls to REST apis.
+ 
+## Todays Objective 
+ 
+ Today we will be using the [Zomato API](https://developers.zomato.com/api) we will 
+ be populating our collection view with one of their curated lists of restaurants
+ in melbourne.
+ 
+ These restaurants will be displayed on the main page with a small image, the 
+ restuarant name and its rating. When the user clicks this image, they will be taken
+  to a more detailed page with all the other information they may need such as address.
+  
+### Advanced work
+
+- *Challenge 1:* Its a bit hard to see where the restaurant is without a map isnt't it?
+Add in a [MapView](https://developer.apple.com/maps/) so the user can see it on a map!
+- *Challenge 2:* For mobile apps, we should be limiting the amount of network calls we make.
+Requesting data and then loading it into our app can slow it down, and consume users 
+data allowance. Perhaps an in-app database would be good so we could persist that data. 
+Setup the app to use [Core Data](https://developer.apple.com/documentation/coredata) and create
+a 'Restaurant' core data model based on the data we pull from Zomato
+
 
 ## Helpful Links
 
