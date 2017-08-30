@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mV5-gh-sat" customClass="RestaurantCollectionViewCell" customModule="Cafe_Reviewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pf8-B2-l8L">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="169"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lu6-vb-njQ">
+                        <rect key="frame" x="0.0" y="110" width="180" height="59"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtp-ZR-Hgb">
+                                <rect key="frame" x="8" y="8" width="164" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="LvX-fT-gOF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5I-GV-2T1">
+                                <rect key="frame" x="123" y="25" width="49" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="J1u-21-3mK"/>
+                                    <constraint firstAttribute="width" secondItem="r5I-GV-2T1" secondAttribute="height" multiplier="49:29" id="ehn-0D-yWl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.31923408742331288" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gtp-ZR-Hgb" secondAttribute="trailing" constant="8" id="1qf-Vb-7Rx"/>
+                            <constraint firstItem="Gtp-ZR-Hgb" firstAttribute="top" secondItem="lu6-vb-njQ" secondAttribute="top" constant="8" id="42b-fb-mpU"/>
+                            <constraint firstAttribute="trailing" secondItem="r5I-GV-2T1" secondAttribute="trailing" constant="8" id="WV1-TI-iHP"/>
+                            <constraint firstAttribute="bottom" secondItem="r5I-GV-2T1" secondAttribute="bottom" constant="5" id="cly-x7-5a2"/>
+                            <constraint firstAttribute="height" constant="59" id="jUS-ch-4mu"/>
+                            <constraint firstItem="Gtp-ZR-Hgb" firstAttribute="leading" secondItem="lu6-vb-njQ" secondAttribute="leading" constant="8" id="o4h-WI-Q7a"/>
+                        </constraints>
+                    </view>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="RHa-fJ-nJF">
+                        <rect key="frame" x="80" y="74" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Pf8-B2-l8L" firstAttribute="top" secondItem="mV5-gh-sat" secondAttribute="top" id="7RM-PF-MPM"/>
+                <constraint firstItem="lu6-vb-njQ" firstAttribute="leading" secondItem="mV5-gh-sat" secondAttribute="leading" id="9pU-wE-Pgr"/>
+                <constraint firstItem="Pf8-B2-l8L" firstAttribute="leading" secondItem="mV5-gh-sat" secondAttribute="leading" id="ABh-zV-t6v"/>
+                <constraint firstAttribute="trailing" secondItem="Pf8-B2-l8L" secondAttribute="trailing" id="Y1d-Xe-usH"/>
+                <constraint firstAttribute="trailing" secondItem="lu6-vb-njQ" secondAttribute="trailing" id="ibr-kY-ldv"/>
+                <constraint firstAttribute="bottom" secondItem="lu6-vb-njQ" secondAttribute="bottom" id="lIx-aM-pqj"/>
+                <constraint firstAttribute="bottom" secondItem="Pf8-B2-l8L" secondAttribute="bottom" id="uyD-Jl-1uc"/>
+            </constraints>
+            <size key="customSize" width="180" height="169"/>
+            <connections>
+                <outlet property="imageView" destination="Pf8-B2-l8L" id="Wyr-Et-Tcs"/>
+                <outlet property="nameLabel" destination="Gtp-ZR-Hgb" id="c20-QR-H8J"/>
+                <outlet property="ratingLabel" destination="r5I-GV-2T1" id="ZHn-vE-gpj"/>
+            </connections>
+            <point key="canvasLocation" x="-252" y="-89.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

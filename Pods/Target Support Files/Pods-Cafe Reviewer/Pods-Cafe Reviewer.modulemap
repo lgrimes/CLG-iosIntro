@@ -1,0 +1,6 @@
+framework module Pods_Cafe_Reviewer {
+  umbrella header "Pods-Cafe Reviewer-umbrella.h"
+
+  export *
+  module * { export * }
+}
