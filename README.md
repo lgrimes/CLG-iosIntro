@@ -96,10 +96,15 @@ popular one is [Alamofire](https://github.com/Alamofire/Alamofire).For this work
  - The featured image of the restaurant
  - The address of the restaurant
  - The rating of the restaurant
- - *Advanced* A button that when tapped, takes the user to the menu at the specified URL.
+ - A button that when tapped, takes the user to the menu at the specified URL.
  [API documentation](https://developer.apple.com/documentation/uikit/uiapplication/1648685-open)
+ 
+ ### Advanced work
+ - *Advanced* Add a way for a user to add a rewview to that restaurant. For this one, you 
+ will need to look into [Core Data](https://developer.apple.com/documentation/coredata) if you want
+ the review to be there when you next open the app too!
 
-### Advanced work
+### Challenges
 
 - *Challenge 1:* Its a bit hard to see where the restaurant is without a map isn't it?
 Add in a [MapView](https://developer.apple.com/maps/) so the user can see it on a map!
