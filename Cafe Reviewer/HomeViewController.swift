@@ -14,6 +14,7 @@ class HomeViewController: UICollectionViewController, ZomatoAPIManager {
     var cellReuseIdentifier = "restCell"
     var restaurants: [Restaurant] = []
     var cachesPath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0]
+    
     let columnLayout = ColumnFlowLayout(
         cellsPerRow: 3,
         minimumInteritemSpacing: 0,
@@ -50,9 +51,9 @@ class HomeViewController: UICollectionViewController, ZomatoAPIManager {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as? RestaurantCollectionViewCell
         if indexPath.row < restaurants.count-1 {
-            let restuarant = restaurants[indexPath.row]
-            cell?.setDetails(name: restuarant.name, rating: restuarant.rating)
-            cell?.imageView.sd_setImage(with: URL(string: restuarant.thumbnailUrlString), completed: { (image, error, cacheType, url) in
+            let restaurant = restaurants[indexPath.row]
+            cell?.setDetails(name: restaurant.name, rating: restaurant.rating)
+            cell?.imageView.sd_setImage(with: URL(string: restaurant.thumbnailUrlString), completed: { (image, error, cacheType, url) in
                 cell?.activityIndicator.stopAnimating()
                 if let returnedImage = image {
                     cell?.imageView.image = returnedImage
@@ -61,10 +62,6 @@ class HomeViewController: UICollectionViewController, ZomatoAPIManager {
             })
         }
         return cell!
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width/2.9, height: collectionView.frame.size.width/2.9)
     }
 }
 
