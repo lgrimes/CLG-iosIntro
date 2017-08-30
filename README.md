@@ -9,6 +9,27 @@ by the end of today, you will know about:
 - [Core Data](https://developer.apple.com/documentation/coredata)
 - Network calls to a third-party API
 
+## Setup
+
+In terminal, navigate to a folder where you want to save your project. Then
+`git clone https://github.com/lgrimes/CLG-iosIntro`
+
+### Cocoapods
+
+Today we will be installing Cocoapods, which is a dependency management system for iOS.
+Cocoapods allows for very fast development because you wont have to re-invent the wheel.
+Need an imageView that is round instead of square? There is probably a library for that.
+
+If you would like to see what libraries are available, you can check the [Cocoapods Spec Repo](https://github.com/CocoaPods/Specs).
+
+[Getting Started with Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
+
+1. Open up terminal and install cocoapods: `sudo gem install cocoapods --verbose`. You can omit the `--verbose`
+flag if you don't care about seeing any output.
+2. Navigate the root of the cloned repository and run `pod repo update` then `pod install`.
+3. Open the file ending in `.xcworkspace`, you may be prompted to install additional
+components for Xcode and this may take a few minutes
+
 ## The Basics
 
 ### UICollectionViewController
@@ -52,32 +73,39 @@ The easiest and most precise way to create a view in iOS is using storyboard or 
 
 ### Network calls
 
-Most developers will use a third-party library to do their network calls, the most 
-popular one is [Alamofire](https://github.com/Alamofire/Alamofire).
-However i personally like to minimise external dependencies because they add a layer
-of complexity and reliance. For this workshop, we will be using [NSURLSession](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/URLLoadingSystem/Articles/UsingNSURLSession.html).
+Most developers will use a third-party library to do their network calls, the most
+popular one is [Alamofire](https://github.com/Alamofire/Alamofire).For this workshop, we will be using [NSURLSession](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/URLLoadingSystem/Articles/UsingNSURLSession.html) as its good to start with the basics.
  [Ray Wenderlichs Tutorial](https://www.raywenderlich.com/158106/urlsession-tutorial-getting-started)
  describes this in a lot more detail but will also give you the basics needed.
  NSURLSession is a very powerful API where you can also create a downloader, not
  just calls to REST apis.
- 
-## Todays Objective 
- 
- Today we will be using the [Zomato API](https://developers.zomato.com/api) we will 
+
+## Todays Objective
+
+ Today we will be using the [Zomato API](https://developers.zomato.com/api) we will
  be populating our collection view with one of their curated lists of restaurants
- in melbourne.
- 
- These restaurants will be displayed on the main page with a small image, the 
- restuarant name and its rating. When the user clicks this image, they will be taken
-  to a more detailed page with all the other information they may need such as address.
-  
+ in melbourne. These restaurants will be displayed on the main page with a small image, the
+ restaurant name and its rating.
+
+ When the user taps this image, they will be taken to a more detailed page with
+ all the other information they may need such as address. This is the page you will
+ be making.
+
+ It should include:
+
+ - The featured image of the restaurant
+ - The address of the restaurant
+ - The rating of the restaurant
+ - *Advanced* A button that when tapped, takes the user to the menu at the specified URL.
+ [API documentation](https://developer.apple.com/documentation/uikit/uiapplication/1648685-open)
+
 ### Advanced work
 
-- *Challenge 1:* Its a bit hard to see where the restaurant is without a map isnt't it?
+- *Challenge 1:* Its a bit hard to see where the restaurant is without a map isn't it?
 Add in a [MapView](https://developer.apple.com/maps/) so the user can see it on a map!
 - *Challenge 2:* For mobile apps, we should be limiting the amount of network calls we make.
-Requesting data and then loading it into our app can slow it down, and consume users 
-data allowance. Perhaps an in-app database would be good so we could persist that data. 
+Requesting data and then loading it into our app can slow it down, and consume users
+data allowance. Perhaps an in-app database would be good so we could persist that data.
 Setup the app to use [Core Data](https://developer.apple.com/documentation/coredata) and create
 a 'Restaurant' core data model based on the data we pull from Zomato
 
