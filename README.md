@@ -4,7 +4,7 @@
 In this workshop you will learn many things that are key to iOS Development and
 by the end of today, you will know about:
 
-- [Swift 4](https://developer.apple.com/swift/)  
+- [Swift](https://developer.apple.com/swift/)  
 - [UIViews](https://developer.apple.com/documentation/uikit/uiview) and [UIViewControllers](https://developer.apple.com/documentation/uikit/uiviewcontroller)
 - [Core Data](https://developer.apple.com/documentation/coredata)
 - Network calls to a third-party API
