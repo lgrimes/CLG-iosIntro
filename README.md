@@ -114,6 +114,10 @@ data allowance. Perhaps an in-app database would be good so we could persist tha
 Setup the app to use [Core Data](https://developer.apple.com/documentation/coredata) and create
 a 'Restaurant' core data model based on the data we pull from Zomato
 
+## Survey
+
+We would love it if you could give us some feedback on how you found the workshop today: [Survey](https://codelikeagirl.typeform.com/to/bz45kf)
+
 
 ## Helpful Links
 
