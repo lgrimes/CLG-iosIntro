@@ -100,7 +100,7 @@ popular one is [Alamofire](https://github.com/Alamofire/Alamofire).For this work
  [API documentation](https://developer.apple.com/documentation/uikit/uiapplication/1648685-open)
  
  ### Advanced work
- - *Advanced* Add a way for a user to add a rewview to that restaurant. For this one, you 
+ - *Advanced* Add a way for a user to add a review to that restaurant. For this one, you 
  will need to look into [Core Data](https://developer.apple.com/documentation/coredata) if you want
  the review to be there when you next open the app too!
 
