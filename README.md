@@ -99,6 +99,10 @@ popular one is [Alamofire](https://github.com/Alamofire/Alamofire).For this work
  - A button that when tapped, takes the user to the menu at the specified URL.
  [API documentation](https://developer.apple.com/documentation/uikit/uiapplication/1648685-open)
  
+ ### Next Steps
+ 
+We didnt quite get to finish our app and make it look how we wanted it to. The restaurant image wasn't the right size and the restaurnt name didn't fit into the label we made. To correct this and make it look much nicer and how you want it, you will need to use something called [Auto Layout](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/LayoutUsingStackViews.html#//apple_ref/doc/uid/TP40010853-CH11-SW1). Where you can specify where you want the image to be 'pinned' (to the top, to the left, and to the right) to make it grow and shrink accordingly to the device that it is being run on. The screen we made will be displayed differently on every device, so our aim is to make it work for each of these.
+ 
  ### Advanced work
  - *Advanced* Add a way for a user to add a review to that restaurant. For this one, you 
  will need to look into [Core Data](https://developer.apple.com/documentation/coredata) if you want
